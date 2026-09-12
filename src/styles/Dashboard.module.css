@@ -1,0 +1,54 @@
+.saudacao { margin-bottom: 1.4rem; }
+.saudacao p { color: var(--cinza); font-size: .9rem; margin: 0; }
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.card {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.1rem 1.2rem;
+  box-shadow: var(--sombra);
+}
+.cardDestaque { border-color: var(--vermelho); background: var(--vermelho-claro); }
+
+.cardRotulo { display: block; font-size: .78rem; color: var(--cinza); text-transform: uppercase; letter-spacing: .04em; }
+.cardValor { display: block; font-size: 2rem; line-height: 1.15; margin: .25rem 0 .1rem; }
+.cardDetalhe { color: var(--cinza); font-size: .8rem; }
+
+.painel { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+
+.bloco {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.2rem;
+  box-shadow: var(--sombra);
+}
+
+.barras { list-style: none; margin: .9rem 0; padding: 0; display: flex; flex-direction: column; gap: .85rem; }
+.barraTopo { display: flex; justify-content: space-between; align-items: center; font-size: .84rem; color: var(--cinza); margin-bottom: .3rem; }
+.barraTrilho { height: 8px; background: var(--cinza-claro); border-radius: 999px; overflow: hidden; }
+.barraPreenchida { height: 100%; border-radius: 999px; background: var(--cinza); transition: width .4s ease; }
+.riscoA { background: var(--vermelho); }
+.riscoI { background: var(--ambar); }
+.riscoB { background: var(--verde); }
+
+.consultas { list-style: none; margin: .9rem 0; padding: 0; display: flex; flex-direction: column; gap: .7rem; }
+.consultas li { display: flex; justify-content: space-between; align-items: center; gap: .8rem; padding-bottom: .7rem; border-bottom: 1px solid var(--borda); }
+.consultas li:last-child { border-bottom: none; padding-bottom: 0; }
+.consultas strong { display: block; font-size: .9rem; }
+.consultas small { color: var(--cinza); font-size: .78rem; }
+
+.link { font-size: .85rem; font-weight: 600; text-decoration: none; }
+.vazio { color: var(--cinza); font-size: .88rem; }
+
+.tokenBox { margin-top: 1.4rem; background: var(--branco); border: 1px solid var(--borda); border-radius: var(--raio); padding: 1rem 1.2rem; }
+.tokenBox summary { cursor: pointer; font-size: .88rem; font-weight: 600; color: var(--grafite-medio); }
+.tokenAviso { font-size: .78rem; color: var(--cinza); margin-top: .7rem; }
+.tokenBox pre { background: var(--cinza-claro); padding: .8rem; border-radius: var(--raio); font-size: .78rem; overflow-x: auto; margin: 0; }

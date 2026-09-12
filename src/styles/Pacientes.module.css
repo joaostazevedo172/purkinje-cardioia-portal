@@ -1,0 +1,41 @@
+.topo { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.1rem; }
+.subtitulo { color: var(--cinza); font-size: .87rem; margin: 0; }
+
+.filtros { display: flex; gap: .6rem; flex-wrap: wrap; }
+.busca, .select {
+  padding: .55rem .8rem;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--branco);
+}
+.busca { min-width: 250px; }
+.busca:focus, .select:focus { border-color: var(--vermelho); }
+
+.tabelaEnvolvente {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  overflow-x: auto;
+}
+
+.tabela { width: 100%; border-collapse: collapse; min-width: 780px; }
+.tabela thead th {
+  text-align: left;
+  padding: .8rem 1rem;
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--cinza);
+  border-bottom: 1px solid var(--borda);
+  background: var(--cinza-claro);
+  white-space: nowrap;
+}
+.tabela tbody td { padding: .8rem 1rem; border-bottom: 1px solid var(--borda); font-size: .89rem; vertical-align: top; }
+.tabela tbody tr:last-child td { border-bottom: none; }
+.tabela tbody tr:hover { background: #fafbfc; }
+.tabela td strong { display: block; }
+.tabela td small { display: block; color: var(--cinza); font-size: .76rem; }
+
+.estado { padding: 2rem; text-align: center; color: var(--cinza); }
+.erro { padding: .7rem 1rem; border-radius: var(--raio); background: #fdecec; color: #a11a17; font-size: .87rem; }

@@ -1,0 +1,45 @@
+/* Design tokens do portal. Um único ponto de verdade para cor e espaçamento. */
+:root {
+  --vermelho: #b3221e;
+  --vermelho-claro: #fdf1f0;
+  --grafite: #1f2430;
+  --grafite-medio: #3d4553;
+  --cinza: #6b7280;
+  --cinza-claro: #f4f5f7;
+  --borda: #e3e6ea;
+  --verde: #2f7d54;
+  --ambar: #b7791f;
+  --branco: #ffffff;
+  --raio: 10px;
+  --sombra: 0 1px 3px rgba(16, 24, 40, .08), 0 1px 2px rgba(16, 24, 40, .04);
+  --fonte: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  color: var(--grafite);
+  background: var(--cinza-claro);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { margin: 0 0 .4rem; line-height: 1.25; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.05rem; }
+p { margin: 0 0 .6rem; }
+
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; font-size: .95rem; }
+
+a { color: var(--vermelho); }
+
+/* Foco visível para navegação por teclado. */
+:focus-visible {
+  outline: 2px solid var(--vermelho);
+  outline-offset: 2px;
+}
