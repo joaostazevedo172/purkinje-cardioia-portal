@@ -45,7 +45,7 @@
 
 ## 🎬 Vídeo de Demonstração
 
-🎥 **Demo Ir Além 1 — Portal CardioIA** (até 4 min): `COLE_O_LINK_DO_YOUTUBE_AQUI`
+🎥 **Demo Ir Além 1 — Portal CardioIA** (4 min): https://youtu.be/GM7ARIVAfeE
 
 ---
 
@@ -61,7 +61,7 @@
 ### Passo a passo
 
 ```bash
-git clone https://github.com/SEU_USUARIO/purkinje-cardioia-portal.git
+git clone https://github.com/joaostazevedo172/purkinje-cardioia-portal.git
 cd purkinje-cardioia-portal
 
 npm install      # ~1 a 3 minutos
